@@ -1,0 +1,32 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe сборка активного файла",
+			"command": "C:\\MinGW\\bin\\g++.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"main.cpp",
+				"Animal.cpp",
+				"Engine.cpp",
+				"-o",
+				"${workspaceFolder}\\build\\lab5.exe",
+				"-I",
+				"${workspaceFolder}\\include",
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "компилятор: C:\\MinGW\\bin\\g++.exe"
+		}
+	]
+}
